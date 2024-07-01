@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/desktop.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -75,25 +77,28 @@
         <div class="event">
             <h3>EVENT</h3>
             <div class="grid">
-                <div class="con">
+                <div 
+                data-aos="flip-right" 
+                data-aos-delay="300"
+                class="con">
                     <a href="">
                         <div class="box"><img src="./images/event1.jpg" alt=""></div>
                         <div class="txt"><span>Sweetie Donut Day</span><br>매달 10일은 스위티도넛데이입니다.<br>포인트 적립 두배 이벤트 및 1만원 이상 구매...</div>
                     </a>
                 </div>
-                <div class="con">
+                <div data-aos="flip-right" class="con">
                     <a href="">
                         <div class="box"><img src="./images/event2.jpg" alt=""></div>
                         <div class="txt"><span>Sweetie Donut Day</span><br>매달 10일은 스위티도넛데이입니다.<br>포인트 적립 두배 이벤트 및 1만원 이상 구매...</div>
                     </a>
                 </div>
-                <div class="con">
+                <div data-aos="flip-right" class="con">
                     <a href="">
                         <div class="box"><img src="./images/event3.jpg" alt=""></div>
                         <div class="txt"><span>Sweetie Donut Day</span><br>매달 10일은 스위티도넛데이입니다.<br>포인트 적립 두배 이벤트 및 1만원 이상 구매...</div>
                     </a>
                 </div>
-                <div class="con">
+                <div data-aos="flip-right" class="con">
                     <a href="">
                         <div class="box"><img src="./images/event4.jpg" alt=""></div>
                         <div class="txt"><span>Sweetie Donut Day</span><br>매달 10일은 스위티도넛데이입니다.<br>포인트 적립 두배 이벤트 및 1만원 이상 구매...</div>
@@ -141,6 +146,7 @@
             </div>
         </div>
     <script>
+        AOS.init();
         const $nav = document.querySelector("nav");
         const $navOpn = document.querySelector(".btn-nav");
         const $navCls = document.querySelector(".btn-cls");
