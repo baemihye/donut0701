@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+    img.pc{display: none;}
+    img.m{display: none;}
+    img.tab{display: block;}
+
+    .s2 .con{
+        display: flex;
+    }
+    .s2 .con:last-child .box{
+        order: 2;
+    }
+    .s2 .con:last-child .txt{
+        order: 1;
+        text-align: right;
+    }
+    .s2 .con:last-child .txt span{
+        margin-left: auto;
+    }
+    .con .txt{
+        width: 50%;
+        text-align: left;
+        padding: 20px 15px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    } 
+    .con .box{
+        width: 50%;
+        padding: 20px 15px;
+    }
+    .con .box img{
+        width: 100%
+    }
+    .con .txt span{
+        font-size: 30px;
+    }
+    .event .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .app a .con{
+        padding: 80px 0;
+    }
+    .app a .con .txt{
+        text-align: left;
+        font-size: 30px;
+        color: #fff;
+        text-wrap: nowrap;
+        padding-left: 40px;
+    }
+    .app a .con .txt span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .app a .con .box{
+        border-radius: 999px;
+        margin: unset;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .sns{
+        padding: 30px 0;
+    }
+    .s1{
+        display: flex;
+    }
+    .fran{
+        padding: 20px 15px;
+    }
+    .may{
+        padding: 20px 15px;
+    }
+}
